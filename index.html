@@ -5,134 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги очистки вентиляции</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="head">
-            <img src="img/eliservis-logo.png" alt="Liberty Vent" class="logo">
-                <div class="dropdown-content">
-                    <nav>
-                        <ul>
-                            <li><a href="#services">Услуги</a></li>
-                            <li><a href="#price">Стоимость</a></li>
-                            <li><a href="#advantages">Преимущества</a></li>
-                            <li><a href="#gallery">Галерея</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-info">
-                    <a class="n" href="tel:+78129202531">+7 (812) 920-25-31</a>
-                    <a class="n" href="mailto:info@libervent.ru">info@libervent.ru</a>
-                </div>
+    <header class="border-bottom border-dark border-2">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <img src="img/eliservis-logo.png" class="img-fluid img-adaptive logo"  alt="Eliservis Logo">
+            <div class="header-info text-adaptive" style="align-items: right; text-align: right;">
+                <a class="n" href="tel:+78129202531">+7 (812) 920-25-31</a>
+                <a class="n" href="mailto:info@libervent.ru">info@libervent.ru</a>
             </div>
-            
-        </div>
-        <div class="banner">
-            <h1>ПРОФЕССИОНАЛЬНАЯ ОЧИСТКА СИСТЕМ ВЕНТИЛЯЦИИ</h1>
         </div>
     </header>
     
-    <div class="content">
-        <div class="name">
-            <h1 id="services">Наши услуги</h1>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/vent1.jpg" alt="Очистка вентиляции" class="card-img c">
-                    <h2>Либерти Вент – профессиональная очистка вентиляционных систем</h2>
-                    <p>Мы предоставляем услуги по очистке вентиляции в производственных, офисных, коммерческих и других объектах...</p>
-                    <details>
-                        <summary>Подробнее</summary>
-                        <p>Очистка от пыли выполняется специальным оборудованием с щетками и пылесосом. 
-                            Щетки удаляют пыль с внутренних поверхностей воздуховодов, а фильтры задерживают всю грязь, предотвращая её распространение. 
-                            После очистки проводится дезинфекция всех участков вентиляционных каналов.</p>
-                    </details>
-                </div>
-                <div class="card">
-                    <img src="img/vent2.jpg" alt="Очистка жировых отложений" class="card-img">
-                    <h2>Профессиональная очистка жировых отложений в вентиляции</h2>
-                    <p>Для предприятий общественного питания (рестораны, кафе, бары) предлагаем плановую очистку вентиляции...</p>
-                    <details>
-                        <summary>Подробнее</summary>
-                        <p>По завершении работ мы предоставляем полный пакет документов, включая журнал учета работ, акты и отчеты. 
-                            Эти документы можно предоставить проверяющим органам (СЭС, Роспотребнадзор, Госпожнадзор).
+    <div class="dropdown-content">
+        <nav>
+            <ul class="d-flex justify-content-center align-items-center">
+                <li>
+                    <div class="circle-menu-item text-center">
+                        <a href="#services">
+                            <img src="img\fon.jpg" alt="Услуги" class="circle-image">
+                            <p>Услуги</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle-menu-item text-center">
+                        <a href="#price">
+                            <img src="img\fon.jpg" alt="Стоимость" class="circle-image">
+                            <p>Стоимость</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle-menu-item text-center">
+                        <a href="#advantages">
+                            <img src="img\fon.jpg" alt="Преимущества" class="circle-image">
+                            <p>Преимущества</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle-menu-item text-center">
+                        <a href="#gallery">
+                            <img src="img\fon.jpg" alt="Галерея" class="circle-image">
+                            <p>Галерея</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="banner z-n1" style="margin-top: 40px; position: absolute;"><h1 class="text-left text-white mt-9 mb-3 w-50 mx-auto pb-2 ban-text">ПРОФЕССИОНАЛЬНАЯ ОЧИСТКА СИСТЕМ ВЕНТИЛЯЦИИ</h1></div>
 
-                            Стоимость очистки зависит от уровня загрязнения. 
-                            Наши специалисты бесплатно выедут на объект для осмотра и составления сметы.</p>
-                    </details>
-                </div>
-                <div class="card">
-                    <img src="img/vent3.jpg" alt="Дезинфекция вентиляции" class="card-img">
-                    <h2>Специализированная дезинфекция вентиляции</h2>
-                    <p>Дезинфекция систем вентиляции проводится по установленным нормам с использованием генераторов холодного тумана...</p>
-                    <details>
-                        <summary>Подробнее</summary>
-                        <p> Перед дезинфекцией обязательно очищаем воздуховоды от пыли, грязи и жира. 
-                            Для распыления дезинфицирующего раствора применяется генератор холодного тумана, равномерно распределяющий его по стенкам воздуховодов. 
-                
+        
+    <div class="container mb-5" style="margin-top: 500px;">
+        <h1 id="services" class="text-center text-white mt-5 mb-3 w-50 mx-auto pb-2 cird" style="background-color:rgb(53, 171, 7); border-radius: 20px; border: solid 2px rgb(27, 84, 4);">Наши услуги</h1>
 
-                            Все работы фиксируются в журнале, а также предоставляются акты выполненных работ и, при необходимости, результаты лабораторных анализов (смывов). </p>
-                    </details>
+        <div class="row justify-content-center">
+            <!-- Карточка 1 -->
+            <div class="col-md-8 col-lg-4">
+                <div class="card" style="height: auto;">
+                    <img src="img/vent1.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Либерти Вент – профессиональная очистка вентиляционных систем</h5>
+                        <p class="card-text">Мы предоставляем услуги по очистке вентиляции в производственных, офисных, коммерческих и других объектах...</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <button class="btn w-100" style="background-color: rgb(53, 171, 7); color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Подробнее
+                                </button>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample"> 
+                                    <div class="accordion-body">
+                                        Очистка от пыли выполняется специальным оборудованием с щетками и пылесосом. Щетки удаляют пыль с внутренних поверхностей воздуховодов, а фильтры задерживают всю грязь, предотвращая её распространение. После очистки проводится дезинфекция всех участков вентиляционных каналов.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 id="price">Цены</h1>
-            <div class="cards-container">
-
-                <div class="cardt">
-                    <div class="card-bg" style="background-image: url('img/eliservis-logo.png');"></div>
-                    <div class="card-content">
-                        <h3>ОЧИСТКА ОТ ПЫЛИ</h3>
-                        <p>Очистка воздуховодов от
-                            пылевых отложений от 300 руб/м
-                            Дезинфекция
-                            систем вентиляции от 50 руб/м
-                            Микробиологическое
-                            исследование от 1000 руб/смыв</p>
+            <!-- Карточка 2 -->
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card" style="height: auto">
+                    <img src="img/vent2.jpg" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Профессиональная очистка жировых отложений в вентиляции</h5>
+                        <p class="card-text">Для предприятий общественного питания (рестораны, кафе, бары) предлагаем плановую очистку вентиляции...</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                                <button class="btn w-100 " style="background-color: rgb(53, 171, 7); color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Подробнее
+                                </button>
+                                <div id="collapseTwo" class="accordion-collapse collapse"> 
+                                    <div class="accordion-body">
+                                        По завершении работ мы предоставляем полный пакет документов, включая журнал учета работ, акты и отчеты. Эти документы можно предоставить проверяющим органам (СЭС, Роспотребнадзор, Госпожнадзор). Стоимость очистки зависит от уровня загрязнения. Наши специалисты бесплатно выедут на объект для осмотра и составления сметы.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="cardt">
-                    <div class="card-bg" style="background-image: url('img/eliservis-logo.png');"></div>
-                    <div class="card-content">
-                        <h3>ОЧИСТКА ОТ ЖИРА</h3>
-                        <p>Очистка воздуховодов от
-                            жировых отложений от 600 руб/м
-                            Очистка вытяжных зонтов от
-                            жировых отложений от 2000 руб/ед
-                            Очистка улитки
-                            вентилятора от 2000 руб/ед</p>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col-md-8 col-lg-4 mb-4" >
+                <div class="card" style="height: auto">
+                    <img src="img/vent3.jpg" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Специализированная дезинфекция вентиляции</h5>
+                        <p class="card-text">Дезинфекция систем вентиляции проводится по установленным нормам с использованием генераторов холодного тумана...</p>
                     </div>
-                </div>
-                <div class="cardt">
-                    <div class="card-bg" style="background-image: url('img/eliservis-logo.png');"></div>
-                    <div class="card-content">
-                        <h3>ОБСЛУЖИВАНИЕ</h3>
-                        <p>Определение состояния
-                            вентиляционных систем от 50 руб/м
-                            Изготовление и установка
-                            инспекционного лючка от 1000 руб/ед
-                            Оформление
-                            журнала учета работ - бесплатно!</p>
+                    <div class="card-footer">
+                        <div class="accordion" id="accordionExample3">
+                            <div class="accordion-item">
+                                <button class="btn w-100" type="button" style="background-color: rgb(53, 171, 7); color: white;" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Подробнее
+                                </button>
+                                <div id="collapseThree" class="accordion-collapse collapse"> 
+                                    <div class="accordion-body">
+                                        Перед дезинфекцией обязательно очищаем воздуховоды от пыли, грязи и жира. Для распыления дезинфицирующего раствора применяется генератор холодного тумана, равномерно распределяющий его по стенкам воздуховодов. Все работы фиксируются в журнале, а также предоставляются акты выполненных работ и, при необходимости, результаты лабораторных анализов (смывов).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="form-section">
-        <form class="decor">
-            <div class="form-inner">
-            <h3>Заполните форму, и мы свяжемся с вами в ближайшее время</h3>
-            <input type="text" placeholder="ФИО" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Сообщение..." rows="3"></textarea>
-            <input type="submit" value="Отправить">
-            </div>
-        </form>
-    </section>
     
-    <footer class="footer">
-        <div class="footer-content">
-            <p>Адрес: Санкт-Петербург, Невский проспект 25</p>
-            <p><a href="tel:+78129202531">Телефон: +7 (812) 920-25-31</a></p>
-            <p><a href="mailto:info@libervent.ru">Электронная почта: info@libervent.ru</a></p>
+    
+
+
+    <h1 class="d-flex justify-content-center align-items-center text-center" id="price">Цены</h1>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title">ОЧИСТКА ОТ ПЫЛИ</h5>
+                <p class="card-text">Очистка воздуховодов от пылевых отложений от 300 руб/м Дезинфекция систем вентиляции от 50 руб/м Микробиологическое исследование от 1000 руб/смыв</p>
+            </div>
+        </div>
+
+            <div class="card ms-3 me-3 mt-3 mb-3" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ОЧИСТКА ОТ ЖИРА</h5>
+                    <p class="card-text">Очистка воздуховодов от жировых отложений от 600 руб/м Очистка вытяжных зонтов от жировых отложений от 2000 руб/ед Очистка улитки вентилятора от 2000 руб/ед</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ОБСЛУЖИВАНИЕ</h5>
+                    <p class="card-text">Определение состояния вентиляционных систем от 50 руб/м Изготовление и установка инспекционного лючка от 1000 руб/ед Оформление журнала учета работ - бесплатно!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    
+    <form class="form-adaptive">
+        <div class="container mb-5" style="background-color: white; border-radius: 40px; height: auto; margin-top: 50px;">
+            <h5 class="d-flex text-center justify-content-center align-items-center pt-4 me-3 ms-3 text-adaptive">Заполните форму, и мы свяжемся с вами в ближайшее время</h5>
+
+            <div class="mb-3 d-flex justify-content-center mt-4">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ФИО" style="width: 80%;background-color: #E9EFF6;border-radius: 50px">
+            </div>
+
+            <div class="mb-3 d-flex justify-content-center mt-5">
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Телефон" style="width: 80%;background-color: #E9EFF6; border-radius: 50px">
+            </div>
+
+            <div class="mb-3 d-flex justify-content-center mt-5">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ваш email"style="width: 80%;background-color: #E9EFF6; border-radius: 50px">
+            </div>
+
+            <div class="d-flex justify-content-center mt-5">
+                <textarea class="form-control" id="exampleFormControlTextarea1" style="width: 80%; background-color: #E9EFF6;border-radius: 10px;" rows="3" placeholder="Сообщение..."></textarea>
+            </div>
+
+            <div class="mt-4 pt-3 text-center d-flex justify-content-center align-items-center pb-5">
+                <input type="submit" value="Отправить" class="text-white form-control" style="border-radius: 40px; width: 80%; background-color: rgb(64, 185, 17);">
+            </div>
+            
+        </div>
+    </form>
+    
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center text-center text-white">
+            <div class="col-md-4 mt-3">
+                <h5 class="text-adaptive">Адрес: Санкт-Петербург, Невский проспект 25</h5>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5 class="text-adaptive"><a href="tel:+78129202531" class="text-white" style="text-decoration: none;">Телефон: +7 (812) 920-25-31</a></h5>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5 class="text-adaptive foot"><a href="mailto:info@libervent.ru" class="text-white" style="text-decoration: none;">Электронная почта: info@libervent.ru</a></h5>
+            </div>
         </div>
     </footer>
 </body>
