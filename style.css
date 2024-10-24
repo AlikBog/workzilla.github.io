@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgb(53, 171, 7);
+    background-color: white;
     height: auto;
    
     align-items: center;
@@ -69,7 +69,7 @@ nav {
 }
 
 .sub {
-    border-radius: 40px; 
+    /* border-radius: 40px;  */
     border: none;
     width: 35%; 
     height: 40px;
@@ -131,9 +131,9 @@ footer {
 }
 .numph {
     width: 50%; height: 40px; 
-    border: none;
+    border: 2px solid black;
     background-color: #E9EFF6; 
-    border-radius: 50px; 
+    /* border-radius: 50px;  */
     margin-right: 10px;
 }
 .dropdown-content ul {
@@ -166,6 +166,8 @@ li {
 
 .circle-menu-item img {
     border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -177,8 +179,9 @@ li {
 }
 .ban-text {
     background-color: rgb(53, 171, 7);
-    width: 100px;
-    height: 100px;
+    width: 900px;
+    font-size: 33px;
+    height: 60px;
 }
 .circle-menu-item p {
     margin: 0;
@@ -211,7 +214,7 @@ li {
 .step-number {
     font-size: 2rem;
     font-weight: bold;
-    color: #007bff; /* Синий цвет для цифр */
+    color: #ffffff; /* Синий цвет для цифр */
     position: relative;
     display: inline-block;
 }
@@ -220,7 +223,7 @@ li {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: rgb(35, 130, 5); /* Темно-зелёная полоска */
+    background-color: #000000; /* Темно-зелёная полоска */
     margin-top: 5px;
 }
 .step-title {
@@ -356,13 +359,14 @@ li {
     }
     .banner h1 {
         text-align: left;
-        font-size: 18px;
-    }
-    .ban-text {
         background-color: rgb(53, 171, 7);
-        width: 200px;
-        height: 60px;
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
     }
+    /* .ban-text {
+        
+    } */
     .logo {
         width: 450px;
         height: auto;
