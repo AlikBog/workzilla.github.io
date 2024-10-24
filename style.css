@@ -19,6 +19,13 @@ header {
     padding: 10px 20px;
 }
 
+.txt-form {
+    margin-left: 15px; 
+    text-align: left; 
+    color: white;
+    margin-right: 900px;
+}
+
 .logo {
     width: 80px;
     height: auto;
@@ -44,10 +51,10 @@ h5 a:hover {
     color: black;
 }
 
-.form-adaptive {
+/* .form-adaptive {
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
 
 .img-adaptive {
     width: 100%;
@@ -61,6 +68,17 @@ nav {
     color: black;
 }
 
+.sub {
+    border-radius: 40px; 
+    border: none;
+    width: 35%; 
+    height: 40px;
+    color: white;
+    background-color: rgb(68, 219, 9);
+}
+.sub:hover {
+    background-color: rgb(42, 128, 9);
+}
 .banner {
     background-image: url('img/banner.jpg');
     background-size: cover;
@@ -80,6 +98,12 @@ nav {
 
 .card:hover {
     transform: translateY(-10px);
+}
+
+.container1 {
+    background-color: rgb(53, 171, 7);  
+    height: auto; 
+    margin-top: 50px;
 }
 
 .card-price {
@@ -105,7 +129,13 @@ footer {
    
     width: 100%;
 }
-
+.numph {
+    width: 50%; height: 40px; 
+    border: none;
+    background-color: #E9EFF6; 
+    border-radius: 50px; 
+    margin-right: 10px;
+}
 .dropdown-content ul {
     list-style: none;
     padding: 0;
@@ -154,6 +184,52 @@ li {
     margin: 0;
     color: black;
 }
+.inputct {
+    width: 600px; 
+    height: auto; 
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+.steps-section {
+    margin-top: 30px;
+    padding: 40px 20px; /* Отступы сверху и снизу */
+    width: 100%; /* Ширина 100% */
+    background-color: rgb(53, 171, 7); /* Зелёный фон */
+    color: white; /* Белый текст для контраста */
+}
+.steps-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: left; /* Заголовок выровнен по левому краю */
+}
+.steps-section p {
+    text-align: left; /* Весь текст выровнен по левому краю */
+}
+.step {
+    margin-bottom: 30px;
+}
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff; /* Синий цвет для цифр */
+    position: relative;
+    display: inline-block;
+}
+.step-number::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(35, 130, 5); /* Темно-зелёная полоска */
+    margin-top: 5px;
+}
+.step-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Выровнено по левому краю */
+}
+
 @media screen and (max-width: 400px) {
     .circle-menu-item img {
         border-radius: 50%;
@@ -196,9 +272,13 @@ li {
         width: 350px;
         height: 70px;
     }
-    /* .ban-text {
-        
-    } */
+    .txt-form {
+        margin-left: 10px; 
+        text-align: left; 
+        color: white;
+        border: none;
+        margin-right: 10px;
+    }
     .logo {
         width: 450px;
         height: auto;
@@ -214,13 +294,31 @@ li {
         width: 40px;
         height: 40px;
     }
-
+    .inputct {
+        border: none;
+        width: auto;                                                                                                                                                                           
+        height: auto; 
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
     .circle-menu-item a {
         font-size: 12px;
+    }
+    .container1 {
+        background-color: rgb(53, 171, 7);  
+        height: auto; 
+        /* margin-top: 50px; */
     }
 }
 
 @media screen and (max-width: 500px) {
+    .txt-form {
+        margin-left: 10px; 
+        text-align: left; 
+        color: white;
+        border: none;
+        margin-right: 10px;
+    }
     .circle-menu-item img {
         border-radius: 50%;
         width: 10px;
@@ -284,6 +382,18 @@ li {
     .circle-menu-item a {
         font-size: 12px;
     }
+    .inputct {
+        border: none;
+        width: auto;                                                                                                                                                                           
+        height: auto; 
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+    .container1 {
+        background-color: rgb(53, 171, 7);  
+        height: auto; 
+        /* margin-top: 50px; */
+    } 
 }
 
 
@@ -316,22 +426,16 @@ li {
         width: 300px;
         height: auto;
     }
-    .form-adaptive {
+    /* .form-adaptive {
         margin-left: 100px;
         margin-right: 100px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        margin-top: 300px;
-    }
     .logo {
         width: 400px;
         height: auto;
     }
-    .form-adaptive {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
+
 }
