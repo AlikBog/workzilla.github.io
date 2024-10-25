@@ -8,12 +8,12 @@ body {
     background: url('img/fon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: black;
 }
 
 header {
     background-color: white;
     height: auto;
-   
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -22,7 +22,7 @@ header {
 .txt-form {
     margin-left: 15px; 
     text-align: left; 
-    color: white;
+    color: black;
     margin-right: 900px;
 }
 
@@ -40,7 +40,7 @@ header {
 
 .header-info a {
     margin-left: 15px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 14px;
 }
@@ -51,10 +51,7 @@ h5 a:hover {
     color: black;
 }
 
-/* .form-adaptive {
-    margin-left: 20px;
-    margin-right: 20px;
-} */
+
 
 .img-adaptive {
     width: 100%;
@@ -64,28 +61,37 @@ h5 a:hover {
     font-size: 18px;
 }
 
+.img-container {
+    max-width: 400px;
+    margin: 10px;
+  }
+  .img-container img {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+  }
+
 nav {
     color: black;
 }
 
 .sub {
-    /* border-radius: 40px;  */
+   
     border: none;
     width: 35%; 
     height: 40px;
     color: white;
-    background-color: rgb(68, 219, 9);
+    background-color: rgb(0, 0, 0);
 }
-.sub:hover {
-    background-color: rgb(42, 128, 9);
-}
+
 .banner {
     background-image: url('img/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 425px;
     width: 100%;
-    color: rgb(53, 171, 7);
+    color: black;
+    
     text-align: center;
     position: relative;
 }
@@ -101,7 +107,7 @@ nav {
 }
 
 .container1 {
-    background-color: rgb(53, 171, 7);  
+    background-color: #76CE7C;  
     height: auto; 
     margin-top: 50px;
 }
@@ -111,17 +117,17 @@ nav {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    border: solid 2px rgb(53, 171, 7);
+    border: solid 2px #76CE7C;
 }
 
 .form-text {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    color: #707981;
+    color: black;
 }
 
 footer {
-    background-color: rgb(53, 171, 7);
+    background-color: #76CE7C;
     height: auto;
 }
 
@@ -133,12 +139,12 @@ footer {
     width: 50%; height: 40px; 
     border: 2px solid black;
     background-color: #E9EFF6; 
-    /* border-radius: 50px;  */
+   
     margin-right: 10px;
 }
 .dropdown-content ul {
     list-style: none;
-    padding: 0;
+   
     margin: 0;
     display: flex;
     justify-content: center;
@@ -154,9 +160,11 @@ footer {
 .circle-menu-item {
     text-align: center;
 }
+
 li {
     margin: 0 40px;
 }
+
 .circle-menu-item a {
     text-decoration: none;
     color: black;
@@ -178,7 +186,7 @@ li {
     transform: scale(1.1);
 }
 .ban-text {
-    background-color: rgb(53, 171, 7);
+    background-color: #76CE7C;
     width: 900px;
     font-size: 33px;
     height: 60px;
@@ -195,18 +203,18 @@ li {
 }
 .steps-section {
     margin-top: 30px;
-    padding: 40px 20px; /* Отступы сверху и снизу */
-    width: 100%; /* Ширина 100% */
-    background-color: rgb(53, 171, 7); /* Зелёный фон */
-    color: white; /* Белый текст для контраста */
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #76CE7C;
+    color: black;
 }
 .steps-section h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    text-align: left; /* Заголовок выровнен по левому краю */
+    text-align: left;
 }
 .steps-section p {
-    text-align: left; /* Весь текст выровнен по левому краю */
+    text-align: left;
 }
 .step {
     margin-bottom: 30px;
@@ -214,7 +222,7 @@ li {
 .step-number {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff; /* Синий цвет для цифр */
+    color: black;
     position: relative;
     display: inline-block;
 }
@@ -223,14 +231,14 @@ li {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #000000; /* Темно-зелёная полоска */
+    background-color: #000000;
     margin-top: 5px;
 }
 .step-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: left; /* Выровнено по левому краю */
+    text-align: left;
 }
 
 @media screen and (max-width: 400px) {
@@ -241,7 +249,6 @@ li {
         object-fit: cover;
         transition: transform 0.3s ease;
     }
-    
     li {
         margin: 0 5px;
     }
@@ -251,6 +258,14 @@ li {
         margin-top: 10px;
     }
 
+    .dropdown-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
     .circle-menu-item {
         text-align: center;
     }
@@ -264,14 +279,14 @@ li {
 
     .circle-menu-item img {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
         transition: transform 0.3s ease;
     }
     .banner h4 {
         font-size: 10px;
-        background-color: rgb(53, 171, 7);
+        background-color: #76CE7C;
         width: 350px;
         height: 70px;
     }
@@ -308,12 +323,12 @@ li {
         font-size: 12px;
     }
     .container1 {
-        background-color: rgb(53, 171, 7);  
+        background-color: #76CE7C;  
         height: auto; 
-        /* margin-top: 50px; */
+       
     }
 }
-
+}
 @media screen and (max-width: 500px) {
     .txt-form {
         margin-left: 10px; 
@@ -359,14 +374,13 @@ li {
     }
     .banner h1 {
         text-align: left;
-        background-color: rgb(53, 171, 7);
+        background-color: #76CE7C;
+        color: black;
         width: 300px;
         height: 40px;
         font-size: 15px;
     }
-    /* .ban-text {
-        
-    } */
+   
     .logo {
         width: 450px;
         height: auto;
@@ -394,14 +408,14 @@ li {
         padding-bottom: 10px;
     }
     .container1 {
-        background-color: rgb(53, 171, 7);  
+        background-color: #76CE7C;  
         height: auto; 
-        /* margin-top: 50px; */
+       
     } 
 }
 
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
     .logo {
         width: 200px;
         height: auto;
@@ -415,14 +429,86 @@ li {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 800px) {
     .logo {
-        width: 250px;
+        width: 200px;
+        height: auto;
+    }
+    .txt-form {
+        margin-left: 10px; 
+        text-align: left; 
+        color: white;
+        border: none;
+        margin-right: 140px;
+        padding-right: 10px;
+    }
+    
+    li {
+        margin: 0 5px;
+    }
+
+    .dropdown-content li {
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .dropdown-content ul {
+        padding: 0;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .circle-menu-item {
+        text-align: center;
+    }
+
+    .circle-menu-item a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        text-align: center;
+    }
+
+    .circle-menu-item img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+    }
+    .banner h1 {
+        text-align: left;
+        background-color: #76CE7C;
+        width: 300px;
+        color: black;
+        height: 40px;
+        font-size: 15px;
+    }
+    .logo {
+        width: 450px;
         height: auto;
     }
     .text-adaptive {
-        font-size: 22px;
+        font-size: 18px;
     }
+
+    .card-price {
+        height: 400px;
+    }
+
+    .circle-menu-item a {
+        font-size: 18px;
+    }
+    .inputct {
+        border: none;
+        width: auto;                                                                                                                                                                           
+        height: auto; 
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+    .container1 {
+        background-color: #76CE7C;  
+        height: auto; 
+       
+    } 
 }
 
 @media screen and (min-width: 988px) {
@@ -430,10 +516,12 @@ li {
         width: 300px;
         height: auto;
     }
-    /* .form-adaptive {
-        margin-left: 100px;
-        margin-right: 100px;
-    } */
+    .txt-form {
+        margin-left: 15px; 
+        text-align: left; 
+        color: black;
+        margin-right: 500px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
